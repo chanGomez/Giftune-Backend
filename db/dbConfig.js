@@ -11,7 +11,7 @@ const cn = DATABASE_URL ? {
   port: process.env.PG_PORT,
   database: process.env.PG_DATABASE,
   user: process.env.PG_USER,
-  password: process.env.PG_PASSWORD,
+  password: process.env.PG_PASSWORD
 };
 const db = pgp(cn);
 // db.connect()
