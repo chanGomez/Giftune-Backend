@@ -18,6 +18,8 @@
     "express": "^4.18.2",
     "morgan": "^1.10.0",
     "nodemon": "^2.0.22",
-    "pg-promise": "^11.5.4"
+    "pg-promise": "^11.5.4",
+    "react-icons": "^5.0.1",
+    "react-toastify": "^10.0.5"
   }
 }
