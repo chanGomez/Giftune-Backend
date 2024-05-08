@@ -8,36 +8,35 @@ DROP TABLE IF EXISTS users;
 CREATE TABLE users (
     id SERIAL PRIMARY KEY NOT NULL,
     user_picture TEXT,
-    user_name VARCHAR(255) NOT NULL,
-    first_name VARCHAR(255) NOT NULL,
-    last_name VARCHAR(255) NOT NULL,
+    display_name VARCHAR(255) NOT NULL,
     dob DATE NOT NULL,
-    email VARCHAR(255) NOT NULL
+    email VARCHAR(255) NOT NULL,
+    firstTimeLogin BOOLEAN
 );
 
-INSERT INTO users(user_picture, user_name, first_name, last_name, dob, email) VALUES
-('https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg', 'Akira', 'Akira', 'Brown', '1998-12-21', 'akira@email.com'),
-('https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg', 'Chantal', 'Chantal', 'Gomez', '1999-05-13', 'chantal@email.com'),
-('https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg', 'Onyx', 'Onyx', 'McQueen', '1997-01-06', 'onyx@email.com'),
-('https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg', 'Naomi', 'Naomi', 'Pate', '1994-09-10', 'naomi@email.com'),
-('https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg', 'Mussie', 'Mussie', 'Russom','1989-02-27', 'mussie@email.com'),
-('https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg', 'Casey', 'Casey', 'Smith', '1999-10-10', 'casey@email.com'),
-('https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg', 'Jeff', 'Jeff', 'Helman', '1998-03-12', 'jeff@email.com'),
-('https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg', 'Emily', 'Emily', 'Johnson', '1995-03-15', 'emily@email.com'),
-('https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg', 'Benjamin', 'Benjamin', 'Martinez', '1992-11-05', 'benjamin@email.com'),
-('https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg', 'Sophia', 'Sophia', 'Lee', '1998-04-20', 'sophia@email.com'),
-('https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg', 'Jackson', 'Jackson', 'Thompson', '1993-09-08', 'jackson@email.com'),
-('https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg', 'Olivia', 'Olivia', 'Rodriguez', '1996-05-10', 'olivia@email.com'),
-('https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg', 'Ethan', 'Ethan', 'Adams', '2000-07-03', 'ethan@email.com'),
-('https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg', 'Ava', 'Ava', 'Wright', '1991-02-18', 'ava@email.com'),
-('https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg', 'Liam', 'Liam', 'Campbell', '1994-10-30', 'liam@email.com'),
-('https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg', 'Charlotte', 'Charlotte', 'White', '1997-06-25', 'charlotte@email.com'),
-('https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg', 'Mason', 'Mason', 'Rivera', '2001-12-12', 'mason@email.com'),
-('https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg', 'Amelia', 'Amelia', 'Cooper', '1999-08-07', 'amelia@email.com'),
-('https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg', 'Noah', 'Noah', 'Hughes', '1990-01-22', 'noah@email.com'),
-('https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg', 'Isabella', 'Isabella', 'Patel', '1993-11-14', 'isabella@email.com'),
-('https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg', 'Lucas', 'Lucas', 'Mitchell', '1992-03-05', 'lucas@email.com'),
-('https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg', 'Mia', 'Mia', 'Carter', '1995-09-28', 'mia@email.com');
+INSERT INTO users(user_picture, display_name, dob, email) VALUES
+('https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg', 'Akira', '1998-12-21', 'akira@email.com'),
+('https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg', 'Chantal', '1999-05-13', 'chantal@email.com'),
+('https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg', 'Onyx', '1997-01-06', 'onyx@email.com'),
+('https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg', 'Naomi', '1994-09-10', 'naomi@email.com'),
+('https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg', 'Mussie','1989-02-27', 'mussie@email.com'),
+('https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg', 'Casey', '1999-10-10', 'casey@email.com'),
+('https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg', 'Jeff', '1998-03-12', 'jeff@email.com'),
+('https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg', 'Emily', '1995-03-15', 'emily@email.com'),
+('https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg', 'Benjamin', '1992-11-05', 'benjamin@email.com'),
+('https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg', 'Sophia', '1998-04-20', 'sophia@email.com'),
+('https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg', 'Jackson', '1993-09-08', 'jackson@email.com'),
+('https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg', 'Olivia', '1996-05-10', 'olivia@email.com'),
+('https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg', 'Ethan', '2000-07-03', 'ethan@email.com'),
+('https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg', 'Ava', '1991-02-18', 'ava@email.com'),
+('https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg', 'Liam', '1994-10-30', 'liam@email.com'),
+('https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg', 'Charlotte', '1997-06-25', 'charlotte@email.com'),
+('https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg', 'Mason', '2001-12-12', 'mason@email.com'),
+('https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg', 'Amelia', '1999-08-07', 'amelia@email.com'),
+('https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg', 'Noah', '1990-01-22', 'noah@email.com'),
+('https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg', 'Isabella', '1993-11-14', 'isabella@email.com'),
+('https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg', 'Lucas', '1992-03-05', 'lucas@email.com'),
+('https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg', 'Mia', '1995-09-28', 'mia@email.com');
 
 
 DROP TABLE IF EXISTS friends_list;
