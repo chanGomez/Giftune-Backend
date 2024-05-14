@@ -20,7 +20,7 @@ const getUsersById = async (id) => {
 
 const getUserByEmail = async (email) => {
   try {
-    const userInfo = await db.one("SELECT * FROM users WHERE email=$1", [
+    const userInfo = await db.oneOrNone("SELECT * FROM users WHERE email=$1", [
       email,
     ]);
     return userInfo;
@@ -29,11 +29,11 @@ const getUserByEmail = async (email) => {
   }
 };
 
-const createUser = async ({ user_picture, display_name, dob, email }) => {
+const createUser = async ({ user_picture, display_name, email }) => {
   try {
     const newUser = await db.any(
-      "INSERT INTO users(user_picture,display_name,dob,email) VALUES ($1,$2,$3,$4,$5,$6) RETURNING *",
-      [user_picture, display_name, dob, email]
+      "INSERT INTO users(user_picture,display_name,email) VALUES ($1,$2,$3) RETURNING *",
+      [user_picture, display_name, email]
     );
     return newUser;
   } catch (error) {

@@ -9,7 +9,7 @@ CREATE TABLE users (
     id SERIAL PRIMARY KEY NOT NULL,
     user_picture TEXT,
     display_name VARCHAR(255) NOT NULL,
-    dob DATE NOT NULL,
+    dob DATE,
     email VARCHAR(255) NOT NULL,
     firstTimeLogin BOOLEAN
 );
