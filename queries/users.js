@@ -31,7 +31,7 @@ const getUserByEmail = async (email) => {
 
 const createUser = async ({ user_picture, display_name, email }) => {
   try {
-    const newUser = await db.any(
+    const newUser = await db.one(
       "INSERT INTO users(user_picture,display_name,email) VALUES ($1,$2,$3) RETURNING *",
       [user_picture, display_name, email]
     );
