@@ -10,7 +10,7 @@ CREATE TABLE users (
     user_picture TEXT,
     display_name VARCHAR(255) NOT NULL,
     dob DATE,
-    email VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL UNIQUE,
     firstTimeLogin BOOLEAN
 );
 
