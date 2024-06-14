@@ -15,12 +15,12 @@ CREATE TABLE users (
 );
 
 INSERT INTO users(user_picture, display_name, dob, email) VALUES
-('https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg', 'Akira', '1998-12-21', 'akira@email.com'),
-('https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg', 'Chantal', '1999-05-13', 'chantal@email.com'),
-('https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg', 'Onyx', '1997-01-06', 'onyx@email.com'),
-('https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg', 'Naomi', '1994-09-10', 'naomi@email.com'),
-('https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg', 'Mussie','1989-02-27', 'mussie@email.com'),
-('https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg', 'Casey', '1999-10-10', 'casey@email.com'),
+('https://img.freepik.com/free-photo/portrait-man-laughing_23-2148859448.jpg?t=st=1718331404~exp=1718335004~hmac=01cd039772b0e927398ba3d050aa37e07354871705713b26c363c2ca2d83ae25&w=826', 'Aaron Smith', '1998-12-21', 'akira@email.com'),
+('https://img.freepik.com/free-vector/hand-drawn-question-mark-silhouette_23-2150940537.jpg?t=st=1718331829~exp=1718335429~hmac=0b50cee097b090f71fb0eaae2eebab5fabc1f00369cb1c59115266a367d8928b&w=826', 'Chanel Marte', '1999-05-13', 'chantal@email.com'),
+('https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671142.jpg?t=st=1718331745~exp=1718335345~hmac=b1f2ad9926f37352678b4148d77256fdb00b34af15598e2cef17768e44f7352d&w=826', 'Mike Brown', '1997-01-06', 'onyx@email.com'),
+('https://img.freepik.com/free-psd/3d-illustration-person-with-sunglasses_23-2149436178.jpg?t=st=1718331455~exp=1718335055~hmac=1d0f717ad0929b5fd3dd31b6610af2f21b005e808ec7daa0b11c689844e35646&w=826', 'Nancy Drew', '1994-09-10', 'naomi@email.com'),
+('https://img.freepik.com/free-photo/turtle-swimming-sea_181624-5513.jpg?w=1380&t=st=1718331893~exp=1718332493~hmac=3ad7e34436e5d387f57b4de79b86262a9d937e30e8ca48eac9872651d19cdee2', 'Keith Andrew','1989-02-27', 'mussie@email.com'),
+('https://img.freepik.com/free-photo/male-skier-skiing-downhill-trough-deep-powder-snow_651396-2160.jpg?t=st=1718332153~exp=1718335753~hmac=4fd333292f24ad72ff7772af09e46714c572ebb2581dc4dede491f0a67dc8a9d&w=826', 'Casey Vargas', '1999-10-10', 'casey@email.com'),
 ('https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg', 'Jeff', '1998-03-12', 'jeff@email.com'),
 ('https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg', 'Emily', '1995-03-15', 'emily@email.com'),
 ('https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg', 'Benjamin', '1992-11-05', 'benjamin@email.com'),
